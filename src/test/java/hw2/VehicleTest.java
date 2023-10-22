@@ -1,3 +1,5 @@
+package hw2;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.gbhomeworks.hw2.Car;
