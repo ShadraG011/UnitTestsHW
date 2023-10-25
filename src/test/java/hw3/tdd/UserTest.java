@@ -83,7 +83,6 @@ class UserTest {
         userRepository.addUser(user);
         userRepository.addUser(admin);
         userRepository.unLoginAllUsersExceptAdmin();
-
         assertTrue(admin.isAuthenticate);
         assertFalse(user.isAuthenticate);
     }
