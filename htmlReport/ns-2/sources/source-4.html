@@ -1,0 +1,139 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Product</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">ru.gbhomeworks.hw1.shop</a>
+</div>
+
+<h1>Coverage Summary for Class: Product (ru.gbhomeworks.hw1.shop)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Product</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/8)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package ru.gbhomeworks.hw1.shop;
+&nbsp;
+&nbsp;public class Product {
+&nbsp;    private Integer cost; // Стоимость продукта
+&nbsp;    private String title; // Название
+&nbsp;
+<b class="nc">&nbsp;    public Product(Integer cost, String title) {</b>
+<b class="nc">&nbsp;        this.cost = cost;</b>
+<b class="nc">&nbsp;        this.title = title;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Геттеры, сеттеры:
+&nbsp;    public int getCost() {
+<b class="nc">&nbsp;        return cost;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setCost(int cost) {
+<b class="nc">&nbsp;        this.cost = cost;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getTitle() {
+<b class="nc">&nbsp;        return title;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setTitle(String title) {
+<b class="nc">&nbsp;        this.title = title;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public String toString() {
+<b class="nc">&nbsp;        return &quot;Product{&quot; +</b>
+&nbsp;                &quot;cost=&quot; + cost +
+&nbsp;                &quot;, title=&#39;&quot; + title + &#39;\&#39;&#39; +
+&nbsp;                &#39;}&#39;;
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-25 18:47</div>
+</div>
+</body>
+</html>

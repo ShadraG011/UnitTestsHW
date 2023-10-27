@@ -1,0 +1,151 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ShopTest</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">ru.gbhomeworks.hw1.shop</a>
+</div>
+
+<h1>Coverage Summary for Class: ShopTest (ru.gbhomeworks.hw1.shop)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ShopTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/16)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package ru.gbhomeworks.hw1.shop;
+&nbsp;
+&nbsp;import java.util.Comparator;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;import static org.assertj.core.api.Assertions.*;
+&nbsp;
+&nbsp;public class ShopTest {
+&nbsp;
+&nbsp;    private Shop shop;
+&nbsp;    private ProductDB productDB;
+&nbsp;
+<b class="nc">&nbsp;    public ShopTest(Shop shop, ProductDB productDB) {</b>
+<b class="nc">&nbsp;        this.shop = shop;</b>
+<b class="nc">&nbsp;        this.productDB = productDB;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /*
+&nbsp;       1. Ќапишите тесты, чтобы проверить, что магазин хранит верный список продуктов (правильное количество продуктов, верное содержимое корзины).
+&nbsp;       2. Ќапишите тесты дл€ проверки корректности работы метода getMostExpensiveProduct.
+&nbsp;       3. Ќапишите тесты дл€ проверки корректности работы метода sortProductsByPrice (проверьте правильность сортировки).
+&nbsp;       */
+&nbsp;
+&nbsp;    public void testRightQuantityProducts(){
+<b class="nc">&nbsp;        assertThat(shop.getProducts())</b>
+<b class="nc">&nbsp;                .isNotEmpty()</b>
+<b class="nc">&nbsp;                .hasSize(productDB.getProducts().size())</b>
+<b class="nc">&nbsp;                .isEqualTo(productDB.getProducts());</b>
+&nbsp;    }
+&nbsp;    public void testSortProductsByPrice() {
+<b class="nc">&nbsp;        assertThat(shop.getProducts())</b>
+<b class="nc">&nbsp;                .isNotEmpty()</b>
+<b class="nc">&nbsp;                .isSortedAccordingTo(shop.getComparator());</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void testGetMostExpensiveProduct() {
+<b class="nc">&nbsp;        assertThat(shop.getMostExpensiveProduct().getCost())</b>
+<b class="nc">&nbsp;                .isEqualTo(shop.sortProductsByPrice().get(shop.getProducts().size()-1).getCost());</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void takeTests() {
+<b class="nc">&nbsp;        testRightQuantityProducts();</b>
+<b class="nc">&nbsp;        testSortProductsByPrice();</b>
+<b class="nc">&nbsp;        testGetMostExpensiveProduct();</b>
+<b class="nc">&nbsp;        System.out.println(&quot;¬се тесты пройдены!&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-25 18:47</div>
+</div>
+</body>
+</html>
